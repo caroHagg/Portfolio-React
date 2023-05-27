@@ -1,5 +1,7 @@
+import React from 'react';
+
 export default function Footer (){
     return (
-        <div> This is Footer </div>
+        <div className="footer text-center mt-5"> Made by Carolina with ❤️ </div>
     );
 }
