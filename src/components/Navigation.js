@@ -3,21 +3,31 @@ import { Link } from "react-router-dom"
 
 
 function Navigation() {
+  const textStyle = {
+    color:"#a45c5c",
+    background: '#f0ece2'
+   
+  }
   return (
-    <ul className="nav nav-tabs">
+    <nav className="nav container-fluid d-flex justify-content-between " >
+      <p className="justify-content-start mt-3 ms-1 fs-2 text-uppercase" style={textStyle}>
+        Carolina Haggerty
+      </p>
+    <ul className="nav justify-content-end mt-3" >
       <li className="nav-item px-4">
-        <Link to="/">About</Link>
+        <Link className="link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" style={textStyle} to="/">About</Link>
       </li>
       <li className="nav-item px-4">
-        <Link to="/portfolio">Portfolio</Link>
+        <Link className=" link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" style={textStyle}  to="/portfolio">Portfolio</Link>
       </li>
       <li className="nav-item px-4">
-        <Link to="/contact">Contact</Link>
+        <Link className="link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" style={textStyle}  to="/contact">Contact</Link>
       </li>
       <li className="nav-item px-4">
-        <Link to="/resume">Resume</Link>
+        <Link className="link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" style={textStyle}  to="/resume">Resume</Link>
       </li>
     </ul>
+    </nav>
   );
 }
 

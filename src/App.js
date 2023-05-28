@@ -8,23 +8,30 @@ import Contact from './components/pages/Contact'
 import Resume from './components/pages/Resume'
 
 function App() {
+  const mainStyle = {
+    background: '#596e79'
+  }
+  const headerStyle = {
+    background: '#f0ece2'
+  }
   return (
-    <>
-    <header>
-
+    <div style={headerStyle}>
     <BrowserRouter>
-    <Navigation/>
+    <header className="container-fluid" style={headerStyle}>
+    <Navigation />
+    </header>
+    <main style={mainStyle}>
     <Routes>
       <Route path="/" element={<About/>}/>
       <Route path="/portfolio" element={<Portfolio/>}/>
       <Route path="/contact" element={<Contact/>}/>
       <Route path="/resume" element={<Resume/>}/>
     </Routes>
+    </main>
   </BrowserRouter>
-    </header>
 
-  <Footer/>
-    </>
+  <Footer style={headerStyle}/>
+    </div>
   );
 }
 
