@@ -7,7 +7,7 @@ export default function Footer (){
     }
     return (
         <div className="footer text-center mt-5 py-1" style={style}>
-            <p> Made by Carolina with ❤️ </p> 
+            <p> Made by Carolina with making changes ❤️ </p> 
               </div>
     );
 }
