@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { SocialIcon } from 'react-social-icons';
 
 export default function Project (props){
     const mainStyle = {
@@ -18,8 +18,8 @@ export default function Project (props){
                     <div>
                     <h5 className="card-title">{project.name}</h5>
                     <p className="card-text">{project.description}</p>
-                    <a className="link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover pe-3" style={mainStyle} href={project.github} target="_blank" rel="noreferrer">Git Repo </a>
-                    {project.deployed&&(<a className="link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" style={mainStyle}  href={project.deployed} target="_blank" rel="noreferrer">App Link</a>)}
+                    <SocialIcon url={project.github}  style={{ height: 25, width: 50 }}  target="_blank" rel="noreferrer" />
+                    {project.deployed&&(<SocialIcon url={project.deployed} bgColor="#7E7C73" style={{ height: 25, width: 25 }}  target="_blank" rel="noreferrer" />)}
                     </div>
                  </div>
                 </div>    
