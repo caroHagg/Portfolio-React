@@ -1,4 +1,5 @@
 import React from 'react';
+import { SocialIcon } from 'react-social-icons';
 
 export default function Footer (){
     const style = {
@@ -6,8 +7,10 @@ export default function Footer (){
         
     }
     return (
-        <div className="footer text-center mt-5 py-1" style={style}>
-            <p> Made by Carolina with making changes ❤️ </p> 
-              </div>
+        <div className="footer text-center mt-4 mb-2 py-1" style={style}>
+            <SocialIcon url="https://linkedin.com/in/carolinahaggerty" style={{ height: 25, width: 50 }} target="_blank" rel="noreferrer" />
+            <SocialIcon url="https://github.com/caroHagg"  style={{ height: 25, width: 50 }}  target="_blank" rel="noreferrer" />
+            <SocialIcon url="mailto:carolina.vhaggerty@gmail.com"  style={{ height: 25, width: 50 }}/>
+        </div>
     );
 }
