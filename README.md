@@ -26,6 +26,9 @@
 ## License
 None. 
 
+## Screenshot 
+![Screenshot of portfolio website](./src/Assets/Images/Screenshot%202023-05-28%20at%209.50.31%20PM.png)
+
 ## Links 
 Deployed website:
  https://myportfolioch.netlify.app
